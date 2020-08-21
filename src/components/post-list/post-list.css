@@ -1,7 +1,11 @@
 .app-list {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 .app-list .list-group-item {
   padding: 20px 35px 10px 35px;
   margin-top: 10px;
+}
+.app-list .list-group-item.important {
+  background-color: #ffffcc;
+  border-color: #ffff99;
 }
