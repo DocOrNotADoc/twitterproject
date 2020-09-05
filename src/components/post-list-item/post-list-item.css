@@ -49,10 +49,13 @@
 }
 
 .app-list-item.important .app-list-item-label {
-  /* color: #FFD700; */
   color: #3399ff;
 }
 
 .app-list-item.important .btn-star {
     color: #FFD700;
 }
+
+/* button .important {
+  background-color: #ffffcc;
+} */

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './app-header.css';
+// import './app-header.css';
 import styled from 'styled-components';
 
 const Header = styled.div`
@@ -16,11 +16,11 @@ const Header = styled.div`
     }
 `;
 
-const AppHeader = () => {
+const AppHeader = ({liked, allPosts}) => {
     return(
         <Header>
             <h1>Jhonny Depp</h1>
-            <h2>6 записей, из них понравилось 0</h2>
+            <h2>{allPosts} записей, из них понравилось {liked}</h2>
         </Header>
     )
 }
