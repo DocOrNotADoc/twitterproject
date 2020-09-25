@@ -44,7 +44,6 @@ export default class App extends Component {
             }
         });
     }
-
     addItem = body => {
         if (body !== '') {
             const newItem = {
@@ -60,7 +59,6 @@ export default class App extends Component {
             });
         }
     }
-
     onToggle = ({id, isImportant = false, isLike = false}) => {
 
         this.setState(({data}) => {
@@ -85,15 +83,12 @@ export default class App extends Component {
             }
         });
     }
-
     onToggleImportant = id => {
         this.onToggle({id: id, isImportant: true});
     }
-
     onToggleLike = id => {
         this.onToggle({id: id, isLike: true})
     }
-
     searchPost = (items, term) => {
         if (term.length === 0) {
             return items
@@ -103,7 +98,6 @@ export default class App extends Component {
             return item.label.indexOf(term) > -1
         });
     }
-
     filterPost = (items, filter) => {
         if (filter === 'like') {
             return items.filter(item => item.like)
@@ -111,11 +105,9 @@ export default class App extends Component {
             return items
         }
     }
-
     onUpdateSearch = (term) => {
         this.setState({term});
     }
-
     onFiletrSelect = (filter) => {
         this.setState({filter});
     }
